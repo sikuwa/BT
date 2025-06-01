@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.ico">
+  <title>Balzer &#8729 Turnšek d.o.o.</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Play&subset=latin,latin-ext" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/BT.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="hamburgerMenuToggle">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+  </div>
+
+  <!-- Sidebar Menu -->
+<div class="overlay" id="sidebarMenu">
+  <nav class="custom-navbar" id="mainNav">
+    <ul>
+
+      <!-- UNTERNEHMEN -->
+      <li>
+        <a href="index.html" class="nav-link" onclick="event.stopPropagation()">UNTERNEHMEN</a>
+        <span onclick="toggleDropdown('dropdown1')"> &#9663;</span>
+        <ul class="dropdown-menu" id="dropdown1">
+          <li><a class="nav-link" href="homepage.html#LEISTUNGEN">Leistungen</a></li>
+          <li><a class="nav-link" href="homepage.html#KUNDEN">Kunden</a></li>
+          <li><a class="nav-link" href="homepage.html#UNSERVERSPRECHEN">Unser Versprechen</a></li>
+          <li><a class="nav-link" href="homepage.html#UNSEREGESCHICHTE">Unsere Geschichte</a></li>
+          <li><a class="nav-link" href="homepage.html#TEAM">Team</a></li>
+        </ul>
+      </li>
+
+      <!-- ANGEBOT -->
+      <li>
+        <a href="angebot.html" class="nav-link" onclick="event.stopPropagation()">ANGEBOT</a>
+        <span onclick="toggleDropdown('dropdown2')"> &#9663;</span>
+        <ul class="dropdown-menu" id="dropdown2">
+          <li><a class="nav-link" href="angebot.html#LEISTUNGENPROLAND">Leistungen pro Land</a></li>
+          <li><a class="nav-link" href="angebot.html#ARBEITSLEISTUNGEN">Arbeitsleistungen</a></li>
+          <li><a class="nav-link" href="angebot.html#ARBEITSMITTEL">Arbeitsmittel</a></li>
+        </ul>
+      </li>
+
+      <!-- KONTAKT -->
+      <li><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+
+      <!-- SPRACHE 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#SPRACHE" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          SPRACHE
+        </a>
+        <ul class="dropdown-menu dropdown-flags" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="/de"><img src="images/03_flag-de.png" alt="DE"></a></li>
+          <li><a class="dropdown-item" href="/en"><img src="images/03_flag-en.png" alt="EN"></a></li>
+          <li><a class="dropdown-item" href="/sl"><img src="images/03_flag-sl.png" alt="SL"></a></li>
+        </ul>
+      </li>-->
+
+    </ul>
+  </nav>
+</div>
+
+ 
+
+  <!-- Sections -->
+  <!-- ANGEBOT Section -->
+<section id="ANGEBOT" class="page-section angebot-section">
+  <div class="container">
+    <h1 class="text-center mb-4">ANGEBOT</h1>
+
+    <!-- Tabs Navigation (Desktop) -->
+    <ul class="nav nav-tabs d-none d-md-flex mb-3" id="angebotTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="land-tab" data-bs-toggle="tab" data-bs-target="#land" type="button" role="tab" aria-controls="land" aria-selected="true">
+          LEISTUNGEN PRO LAND
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="false">
+          ARBEITSLEISTUNGEN IM DETAIL
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="angebotTabContent">
+      <!-- First Tab -->
+      <div class="tab-pane fade show active" id="land" role="tabpanel" aria-labelledby="land-tab">
+        <!-- Accordion for Mobile -->
+        <div class="accordion d-md-none" id="accordionLand">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLand">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLand" aria-expanded="true" aria-controls="collapseLand">
+                LEISTUNGEN PRO LAND
+              </button>
+            </h2>
+            <div id="collapseLand" class="accordion-collapse collapse show" aria-labelledby="headingLand" data-bs-parent="#accordionLand">
+              <div class="accordion-body p-0">
+                <div class="table-responsive">
+                  <table class="table custom-table table-bordered">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Slowenien</th>
+                        <th>Deutschland</th>
+                        <th>Schweiz</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Abwasser-, Wasser-, Gasanlagen</td>
+                        <td>✔</td><td>✔</td><td>✔</td>
+                      </tr>
+                      <tr>
+                        <td>Wärmeversorgungsanlagen</td>
+                        <td>✔</td><td>✔</td><td>✔</td>
+                      </tr>
+                      <tr>
+                        <td>Lufttechnische Anlagen</td>
+                        <td>✔</td><td>✔</td><td>✔</td>
+                      </tr>
+                      <tr>
+                        <td>thermische & dynamische Simulationen</td>
+                        <td>✔</td><td></td><td></td>
+                      </tr>
+                      <tr>
+                        <td>Energiekonzepte</td>
+                        <td>✔</td><td></td><td></td>
+                      </tr>
+                      <tr>
+                        <td>Bauphysik</td>
+                        <td>Partnerfirma</td><td></td><td></td>
+                      </tr>
+                      <!-- Add remaining rows similarly -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Table -->
+        <div class="d-none d-md-block">
+          <div class="table-responsive">
+            <table class="table custom-table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Slowenien</th>
+                  <th>Deutschland</th>
+                  <th>Schweiz</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Abwasser-, Wasser-, Gasanlagen / Sanitäre Anlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Wärmeversorgungsanlagen / Heizungsanlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Lufttechnische Anlagen / Lüftungsanlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>thermische und dynamische Simulationen</td>
+                  <td>✔</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Energiekonzepte</td>
+                  <td>✔</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Bauphysik</td>
+                  <td>Partnerfirma</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Genehmigung</td>
+                  <td>✔</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Dampfanlagen</td>
+                  <td>Partnerfirma</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>RWA Rauch- und Wärmeabzugsanlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>DA Rauchdruckanlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Gewerbliche Kälte</td>
+                  <td>Partnerfirma</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Grauwasseraufbereitung</td>
+                  <td></td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>medizinische und technische Gase</td>
+                  <td>✔</td>
+                  <td></td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Schwimmbäder</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Kanalisationen (Grundleitungen)</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Retentionsanlagen</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Löschwasser-Rückhaltebecken</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Automatische Feuerlöschanlagen (Sprinkler)</td>
+                  <td>✔</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CFD (Strömungssimulationen)</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>              
+                <!-- Repeat rows as above -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Tab -->
+      <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+        <div class="accordion d-md-none" id="accordionDetail">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDetail">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetail" aria-expanded="false" aria-controls="collapseDetail">
+                ARBEITSLEISTUNGEN IM DETAIL
+              </button>
+            </h2>
+            <div id="collapseDetail" class="accordion-collapse collapse" aria-labelledby="headingDetail" data-bs-parent="#accordionDetail">
+              <div class="accordion-body p-0">
+                <div class="table-responsive">
+                  <table class="table custom-table table-bordered small-table">
+                    <thead>
+                      <tr>
+                        <th>Phase</th>
+                        <th>Bezeichnung</th>
+                        <th>Detail</th>
+                        <th class="rotate-text">Heizung</th>
+                        <th class="rotate-text">Kälte</th>
+                        <th class="rotate-text">Lüftung</th>
+                        <th class="rotate-text">Klima</th>
+                        <th class="rotate-text">Sprinkler</th>
+                        <th class="rotate-text">Sanitär</th>
+                        <th class="rotate-text">räumliche FK</th>
+                        <th class="rotate-text">GA</th>
+                        <th>Bemerkungen</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> &nbsp; </th>
+                        <td> <b> Diverses </b></td>
+                        <td>Energienachweis, Teil EN-1 / EN-2a / EN-2b</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>in Zusammenarbeit mit Fremdfirmen möglich</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Energienachweis, Teil EN-3 / EN-4</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>                         
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Minergie-Nachweis (Gebäudehülle und Gebäudetechnik)</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>in Zusammenarbeit mit Fremdfirmen möglich</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Minergie-Nachweis (Gebäudetechnik)</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Eingabe Wärmeerzeugung</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                       <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Studien/ Konzepte</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Energiekonzepte inkl. Photovoltaik</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Energiekennzahlen</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>statische Simulation</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Schlechtester Fall, Normen</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>dynamische Simulation</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Zeitverlauf; Normen</td>
+                      </tr>
+<!-- *********************************************************** vorprojekt  *********************************************************** -->
+                       <tr>
+                        <td>3/31</th>
+                        <td> <b> Vorprojekt </b></td>
+                        <td>Kontakte zu Behörden, Ämtern</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Unterstützung durch BC möglich</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Aufnahmen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen des Raumbedarfs und Lage der Zentralen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen des Raumbedarfs und Lage der Schächte und abgehängten Decken</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Prinzipschemata</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen der Versorgung und Entsorgung des Gebäudes</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Regel- und Messkonzept</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Regel- und Messkonzept finish</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>Abgleich mit Fremdplanern, Bauherrschaft etc.</td>
+                      </tr>
+                       <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationskonzept</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>mit Unterstützung BC</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kostenschätzung</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** bauprojekt *********************************************************** -->
+                      <tr>
+                        <td>3/32</th>
+                        <td> <b>Bauprojekt</b></td>
+                        <td>Kontakte zu Behörden, Ämtern</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Unterstützung durch BC möglich</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Heizlastberechnung</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kühllastberechnung nach VDI 2078/ VDI 6007</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Einholung von Lieferantenangeboten</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                       <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen des Regelkonzeptes</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen des Messkonzeptes</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Festlegen des Anlage Kennzeichnungssystem </td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Definitives Festlegen des Raumbedarfs der Zentralen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Definitives Festlegen des Raumbedarfs der Schächte und abgehängten Decken</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Erstellen der Anlage- und Funktionsbeschriebe</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Erstellen des Regelbeschrieb</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Auslegung Flächenheizung</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>                        
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Grundrisspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Prinzipschema</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Strangschema</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kostenvoranschlag</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Erstellen der Baueingabeformulare</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationsplanung</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationseingabe</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** Bewilligung *********************************************************** -->
+                      <tr>
+                        <td>3/33</th>
+                        <td> <b> Bewilligung </b></td>
+                        <td>Begleitung des Bewilligungsverfahren</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationseingabe</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** Ausschreibung *********************************************************** -->
+                      <tr>
+                        <td>4/41</th>
+                        <td> <b>Ausschreibung</b></td>
+                        <td>Grundrisspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Berechnungen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Prinzipschema</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Strangschema</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Einholen der Lieferantenangebote</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationsplanung</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Materialauszug</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>automatisiert</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Materialauszug finish</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Materialauszug Nachbearbeitung</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Ausschreibung</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>rechn. und techn. Vergleich</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Unternehmerverhandlungen</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** 5/51 Ausführungsprojekt *********************************************************** -->
+                      <tr>
+                        <td>5/51</th>
+                        <td> <b>Ausführungsprojekt</b></td>
+                        <td>Werkvertrag erstellen</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Berechnungen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Koordinationspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Ausführungspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Aussparungspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Einlegepläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Prinzipschema</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Strangschema </td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Flächenheizung, -kälte Pläne </td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Kanalisationspläne</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** 5/52 Ausführung *********************************************************** -->
+                      <tr>
+                        <td>5/52</th>
+                        <td> <b>Ausführung</b></td>
+                        <td>Fachbauleitung</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>QS</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Projektänderungen</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+<!-- *********************************************************** 5/53 Inbetriebnahme *********************************************************** -->
+                      <tr>
+                        <td>5/53</th>
+                        <td> <b>Inbetriebnahme</b></td>
+                        <td>Abnahme</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Revisionspläne</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Inbetriebnahme</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b>&nbsp;</b></td>
+                        <td>Bauwerksakten</td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td><strong>BT</strong></td>
+                        <td>AG</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Mängelbehebung</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</th>
+                        <td> <b> &nbsp; </b></td>
+                        <td>Schlussabrechnung</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>BC</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Table -->
+        <div class="d-none d-md-block">
+          <div class="table-responsive">
+            <table class=" table table-borderless table-condensed equal-cols">
+                <tbody>   
+                  <tr>
+                    <td scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>              
+                    <td><strong>BT – Balzer &#8729; Turnšek</strong></td>
+                    <td>BC – Balzer Consulting</td> 
+                    <td>AG – Auftraggeber</td>                           
+                  </tr>
+                </tbody>        
+            </table>
+            <table class="table custom-table table-bordered small-table">
+              <thead>
+                <tr>
+                  <th>Phase</th>
+                  <th>Bezeichnung</th>
+                  <th>Detail</th>
+                  <th class="rotate-text">Heizung</th>
+                  <th class="rotate-text">Kälte</th>
+                  <th class="rotate-text">Lüftung</th>
+                  <th class="rotate-text">Klima</th>
+                  <th class="rotate-text">Sprinkler</th>
+                  <th class="rotate-text">Sanitär</th>
+                  <th class="rotate-text">räumliche FK</th>
+                  <th class="rotate-text">GA</th>
+                  <th>Bemerkungen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> &nbsp; </th>
+                  <td> <b> Diverses </b></td>
+                  <td>Energienachweis, Teil EN-1 / EN-2a / EN-2b</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>in Zusammenarbeit mit Fremdfirmen möglich</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Energienachweis, Teil EN-3 / EN-4</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>                         
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Minergie-Nachweis (Gebäudehülle und Gebäudetechnik)</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>in Zusammenarbeit mit Fremdfirmen möglich</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Minergie-Nachweis (Gebäudetechnik)</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Eingabe Wärmeerzeugung</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Studien/ Konzepte</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>Energiekonzepte inkl. Photovoltaik</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Energiekennzahlen</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>statische Simulation</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>Schlechtester Fall, Normen</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>dynamische Simulation</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>Zeitverlauf; Normen</td>
+                </tr>
+<!-- *********************************************************** vorprojekt  *********************************************************** -->
+                 <tr>
+                  <td>3/31</th>
+                  <td> <b> Vorprojekt </b></td>
+                  <td>Kontakte zu Behörden, Ämtern</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>Unterstützung durch BC möglich</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Aufnahmen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen des Raumbedarfs und Lage der Zentralen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen des Raumbedarfs und Lage der Schächte und abgehängten Decken</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Prinzipschemata</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen der Versorgung und Entsorgung des Gebäudes</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Regel- und Messkonzept</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Regel- und Messkonzept finish</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>Abgleich mit Fremdplanern, Bauherrschaft etc.</td>
+                </tr>
+                 <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationskonzept</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>mit Unterstützung BC</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kostenschätzung</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** bauprojekt *********************************************************** -->
+                <tr>
+                  <td>3/32</th>
+                  <td> <b>Bauprojekt</b></td>
+                  <td>Kontakte zu Behörden, Ämtern</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>Unterstützung durch BC möglich</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Heizlastberechnung</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kühllastberechnung nach VDI 2078/ VDI 6007</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Einholung von Lieferantenangeboten</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen des Regelkonzeptes</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen des Messkonzeptes</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Festlegen des Anlage Kennzeichnungssystem </td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Definitives Festlegen des Raumbedarfs der Zentralen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Definitives Festlegen des Raumbedarfs der Schächte und abgehängten Decken</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Erstellen der Anlage- und Funktionsbeschriebe</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Erstellen des Regelbeschrieb</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Auslegung Flächenheizung</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>                        
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Grundrisspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Prinzipschema</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Strangschema</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kostenvoranschlag</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Erstellen der Baueingabeformulare</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationsplanung</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationseingabe</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** Bewilligung *********************************************************** -->
+                <tr>
+                  <td>3/33</th>
+                  <td> <b> Bewilligung </b></td>
+                  <td>Begleitung des Bewilligungsverfahren</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationseingabe</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** Ausschreibung *********************************************************** -->
+                <tr>
+                  <td>4/41</th>
+                  <td> <b>Ausschreibung</b></td>
+                  <td>Grundrisspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Berechnungen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Prinzipschema</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Strangschema</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Einholen der Lieferantenangebote</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationsplanung</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Materialauszug</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>automatisiert</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Materialauszug finish</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Materialauszug Nachbearbeitung</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Ausschreibung</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>rechn. und techn. Vergleich</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Unternehmerverhandlungen</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** 5/51 Ausführungsprojekt *********************************************************** -->
+                <tr>
+                  <td>5/51</th>
+                  <td> <b>Ausführungsprojekt</b></td>
+                  <td>Werkvertrag erstellen</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Berechnungen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Koordinationspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Ausführungspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Aussparungspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Einlegepläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Prinzipschema</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Strangschema </td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Flächenheizung, -kälte Pläne </td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Kanalisationspläne</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** 5/52 Ausführung *********************************************************** -->
+                <tr>
+                  <td>5/52</th>
+                  <td> <b>Ausführung</b></td>
+                  <td>Fachbauleitung</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>QS</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Projektänderungen</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+<!-- *********************************************************** 5/53 Inbetriebnahme *********************************************************** -->
+                <tr>
+                  <td>5/53</th>
+                  <td> <b>Inbetriebnahme</b></td>
+                  <td>Abnahme</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Revisionspläne</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Inbetriebnahme</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b>&nbsp;</b></td>
+                  <td>Bauwerksakten</td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td><strong>BT</strong></td>
+                  <td>AG</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Mängelbehebung</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</th>
+                  <td> <b> &nbsp; </b></td>
+                  <td>Schlussabrechnung</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>BC</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>                  
+                <!-- Repeat rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ***********************************************************  S E C T I O N   A R B E I T S M I T T E L   *********************************************************** -->  
+
+  <section id="ARBEITSMITTEL" class="page-section arbeitsmittel-section">
+    <div class="container">
+    <h1>ARBEITSMITTEL</h1>
+    <p>Um dem stetig wachsenden Ansprüchen beim Bauen zu genügen, ist es uns ein Anliegen immer mit den neusten Versionen verschiedenster Gebäudetechnikpro-gramme zu arbeiten. Sämtliche Pläne werden als 3D-Modell erstellt.</p>
+    <h3>PROGRAMME:</h3>
+    <div class="row text-center">
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="0"><img src="images/00_H.png" class="img-fluid" alt="Heizung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="100"><img src="images/00_K.png" class="img-fluid" alt="Kälte"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="200"><img src="images/00_L.png" class="img-fluid" alt="Lüftung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="300"><img src="images/00_KL.png" class="img-fluid" alt="Klima"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="400"><img src="images/00_S.png" class="img-fluid" alt="Sanitär"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="500"><img src="images/00_LO.png" class="img-fluid" alt="Koordination"></div>
+    </div>
+    <h3>SCHNITTSTELLEN:</h3>
+     <div class="row text-center">
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="0"><img src="images/00_H.png" class="img-fluid" alt="Heizung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="100"><img src="images/00_K.png" class="img-fluid" alt="Kälte"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="200"><img src="images/00_L.png" class="img-fluid" alt="Lüftung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="300"><img src="images/00_KL.png" class="img-fluid" alt="Klima"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="400"><img src="images/00_S.png" class="img-fluid" alt="Sanitär"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="500"><img src="images/00_LO.png" class="img-fluid" alt="Koordination"></div>
+    </div>
+
+    <h3>BERECHNUNGSPROGRAMME:</h3>
+    <p>liNear+REVIT: VDI2078 (Berechnung und Simulation)
+    liNear+REVIT: ASHRAE 2005/2013
+    Trimble NOVA: VDI2078 (Berechnung und Simulation)
+    Diverse Berechnungsprogramme Heizlast; Heizkörper- und Fussbodenauslegung; Rohrnetzberechnung Hei-zung; Kühllastberechnung SIA 382/2; Kühllastberech-nung VDI 2078, Luftkanalnetz.
+    </p>
+
+
+    </div>  
+  </section>
+
+  
+ <!-- ***********************************************************  F O O T E R  *********************************************************** -->  
+  <!-- FOOTER -->
+ <footer class="site-footer">
+  <div class="container text-center py-4">
+    <p>&copy; 2025 Balzer &#8729; Turnšek. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+ 
+
+  <!-- ///////////////////////////////////////////////////////////// Scripts ///////////////////////////////////////////////////////////// -->
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+ 
+
+  <script>
+    const logo = document.querySelector('.logo');
+    const hamburgerMenuToggle = document.getElementById('hamburgerMenuToggle');
+    const sidebarMenu = document.getElementById('sidebarMenu');
+
+    hamburgerMenuToggle.addEventListener('click', () => {
+      hamburgerMenuToggle.classList.toggle('active');
+      sidebarMenu.classList.toggle('active');
+      closeAllDropdowns();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (sidebarMenu.classList.contains('active') &&
+          !sidebarMenu.contains(e.target) &&
+          !hamburgerMenuToggle.contains(e.target)) {
+        sidebarMenu.classList.remove('active');
+        hamburgerMenuToggle.classList.remove('active');
+        closeAllDropdowns();
+      }
+    });
+
+    document.querySelectorAll('.close-menu').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebarMenu.classList.remove('active');
+        hamburgerMenuToggle.classList.remove('active');
+        closeAllDropdowns();
+      });
+    });
+
+    function toggleDropdown(id) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu.id !== id) menu.classList.remove('show');
+      });
+      const clicked = document.getElementById(id);
+      if (clicked) clicked.classList.toggle('show');
+    }
+
+    function closeAllDropdowns() {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+    }
+
+    // Dynamic content loading
+    document.querySelectorAll('[data-load]').forEach(section => {
+      fetch(section.getAttribute('data-load'))
+        .then(res => res.text())
+        .then(html => section.innerHTML = html);
+    });
+  </script>
+</body>
+</html>

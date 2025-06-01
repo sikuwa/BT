@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.ico">
+  <title>Balzer &#8729; Turnšek d.o.o.</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Play&subset=latin,latin-ext" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/BT.css" />
+
+  <!-- CSSMap STYLESHEET - EUROPE -->
+  <script src="js/mapdata.js"></script>
+  <script src="js/europemap.js"></script>
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+<main class="full-width">
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="hamburgerMenuToggle">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+  </div>
+
+  <!-- Sidebar Menu -->
+<div class="overlay" id="sidebarMenu">
+  <nav class="custom-navbar" id="mainNav">
+    <ul>
+
+      <!-- UNTERNEHMEN -->
+      <li>
+        <a href="unternehmen.html" class="nav-link" onclick="event.stopPropagation()">UNTERNEHMEN</a>
+        <span onclick="toggleDropdown('dropdown1')"> &#9663;</span>
+        <ul class="dropdown-menu" id="dropdown1">
+          <li><a class="nav-link" href="#LEISTUNGEN">Leistungen</a></li>
+          <li><a class="nav-link" href="#KUNDEN">Kunden</a></li>
+          <li><a class="nav-link" href="#UNSERVERSPRECHEN">Unser Versprechen</a></li>
+          <li><a class="nav-link" href="#UNSEREGESCHICHTE">Unsere Geschichte</a></li>
+          <li><a class="nav-link" href="#TEAM">Team</a></li>
+        </ul>
+      </li>
+
+      <!-- ANGEBOT -->
+      <li>
+        <a href="angebot.html" class="nav-link" onclick="event.stopPropagation()">ANGEBOT</a>
+        <span onclick="toggleDropdown('dropdown2')"> &#9663;</span>
+        <ul class="dropdown-menu" id="dropdown2">
+          <li><a class="nav-link" href="angebot.html#LEISTUNGENPROLAND">Leistungen pro Land</a></li>
+          <li><a class="nav-link" href="angebot.html#ARBEITSLEISTUNGEN">Arbeitsleistungen</a></li>
+          <li><a class="nav-link" href="angebot.html#ARBEITSMITTEL">Arbeitsmittel</a></li>
+        </ul>
+      </li>
+
+      <!-- KONTAKT -->
+      <li><a class="nav-link" href="kontakt.html">KONTAKT</a></li>
+
+      <!-- SPRACHE 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#SPRACHE" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          SPRACHE
+        </a>
+        <ul class="dropdown-menu dropdown-flags" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="/de"><img src="images/03_flag-de.png" alt="DE"></a></li>
+          <li><a class="dropdown-item" href="/en"><img src="images/03_flag-en.png" alt="EN"></a></li>
+          <li><a class="dropdown-item" href="/sl"><img src="images/03_flag-sl.png" alt="SL"></a></li>
+        </ul>
+      </li>-->
+
+    </ul>
+  </nav>
+</div>
+
+  <!-- ********************************************************************** H O M E P A G E  ********************************************************************** -->
+   <!-- Logo and Background -->
+<section id="UNTERNEHMEN" class="unternehmen-section">
+
+  <div class="bg-image">
+    <div class="logo" id="logo">
+      <div class="text-center">
+        <img src="images/bt_logo-velik.png" alt="logo" style="filter: drop-shadow(2px 2px 2px #282C35);" />
+        <h1 >balzer • turnšek <small>d.o.o.</small></h1>
+        <h2 >Ingenieurbüro für Bautechnik</h2>
+      </div>
+    </div>
+
+    <!-- Mouse Scroll Indicator -->
+    <a href="#LEISTUNGEN" class="mouse"></a>
+  </div>
+
+</section>
+
+  <!-- Sections -->
+
+    <!-- *********************************************************** L E I S T U N G E N   S E C T I O N  *********************************************************** -->
+ <section id="LEISTUNGEN" class="page-section leistungen-section">
+  <div class="container">
+    <h1>LEISTUNGEN</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>
+          Balzer Turnšek ist ein Ingenieurbüro der Gebäudetechnik, welches über die Fach-kompetenzen Heizung, Kälte, Lüftung, Klima, Sanitär und räumliche Koordination verfügt. Unser Team zeichnet sich durch ihren kompetenten und dynamischen Umgang mit den Kunden aus.
+          Detail siehe Arbeitsleistungen <a href="leistungen.html" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="2000">LINK EINFÜGEN</a>
+        </p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="0"><img src="images/00_H.png" class="img-fluid" alt="Heizung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="100"><img src="images/00_K.png" class="img-fluid" alt="Kälte"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="200"><img src="images/00_L.png" class="img-fluid" alt="Lüftung"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="300"><img src="images/00_KL.png" class="img-fluid" alt="Klima"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="400"><img src="images/00_S.png" class="img-fluid" alt="Sanitär"></div>
+      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="500"><img src="images/00_LO.png" class="img-fluid" alt="Koordination"></div>
+    </div>
+  </div>
+</section>
+
+ <!-- ***********************************************************  K U N D E N  S E C T I O N  *********************************************************** -->
+
+<section id="KUNDEN" class="page-section kunden-section">
+  <div class="container">
+    <h1>KUNDEN</h1>
+    <div class="row">
+      <div class="col-md-8">        
+        <div id="map"></div>
+      </div>
+      <div class="col-md-4 besedilo">
+        <p>Unser Angebot richtet sich an Ingenieurbüros und Installateure in Deutschland, Österreich und der Schweiz. Auf dem Heimmarkt Slowenien agieren wir als neutrales, unabhängiges Ingenieurbüro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***********************************************************  U N S E R V E R S P R E C H E N   S E C T I O N  *********************************************************** --> 
+  <section id="UNSERVERSPRECHEN" class="page-section unserversprechen-section">
+      <div class="container"><h1>UNSER VERSPRECHEN</h1>
+        <p >
+          Unser Versprechen ist Ihre Bedürfnisse in einer professionelle Art und Weise zu befriedigen.
+        </p>
+        <ul id="versprechenList" class="reveal-list">
+          <li class="reveal"><div class="reveal__content">wir haben ein sehr gutes Preis / Leistungsverhältnis</div></li>
+          <li class="reveal"><div class="reveal__content">wir entlasten Ihre Firma für wichtigere Aufgaben</div></li>
+          <li class="reveal"><div class="reveal__content">wir planen alles im 3-D</div></li>
+          <li class="reveal"><div class="reveal__content">wir helfen Ihnen beim BIM (Building Information Modeling)</div></li>
+          <li class="reveal"><div class="reveal__content">wir sind technisch sehr gut ausgebildet</div></li>
+          <li class="reveal"><div class="reveal__content">wir sind ein starkes Team</div></li>
+          <li class="reveal"><div class="reveal__content">wir erbringen die in Ihrem Land geforderte Qualität</div></li>
+          <li class="reveal"><div class="reveal__content">wir sind voll motiviert</div></li>
+          <li class="reveal"><div class="reveal__content">wir wollen Sie mit unseren Leistungen überzeugen</div></li>
+        </ul>
+      </div>
+    </section>
+ <!-- ***********************************************************  U N S E R V E R E GESCHICHTE   S E C T I O N  *********************************************************** --> 
+  <section id="UNSEREGESCHICHTE" class="page-section unseregeschichte-section">
+    <div class="container"><h1>UNSERE GESCHICHTE</h1>
+    <p>Das Ingenieurbüro wurde am 01. Juni 2017 in Ljubljana durch Jernej Turnsek und Stephan Balzer gegründet. Jernej hat vor der Gründung in Deutschland viel Erfah-rung in der Planung gesammelt. Im Jahre 2015 und 2016 absolvierte Jernej ein Praktikum in der Schweiz.</p>
+    </div>
+  </section>
+
+ <!-- ***********************************************************  T E A M   S E C T I O N  *********************************************************** --> 
+
+
+
+<!-- Our team Section -->
+<section id="TEAM" class="page-section team-section">  
+  <div class="container">
+    <h1>TEAM</h1>
+    <div class="row text-center">
+      
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_stefan-balzer.jpg" alt="Stefan Balzer" class="img-responsive">
+                <figcaption>
+                  <p>kann sich seit Monaten nicht zwischen Matt-Schwarz und Perlmutt-Weiß für den neuen Tesla entscheiden</p><hr>
+                  
+                  <ul>                    
+                    <li><a class="email" href="mailto:st.balzer@outlook.com"><span>st.balzer@outlook.com</span></a></li>                    
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Stefan Balzer</h4>
+              <p>Geschäftsführer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_jernej-turnsek.jpg" alt="Jernej Turnšek" class="img-responsive">
+                <figcaption>
+                  <p>hat Schlafsack und Zahnbürste im Büro, aber behauptet, er „arbeitet nur etwas länger“</p><hr>
+                  <ul>
+                    <li><a class="email" href="mailto:jernej.turnsek@achtb.com"><span>jernej.turnsek@achtb.com</span></a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Jernej Turnšek</h4>
+              <p>Geschäftsführer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_nina-turnsek.jpg" alt="Nina Turnšek" class="img-responsive">
+                <figcaption>
+                  <p>die einzige Person im Büro, deren Fotos ohne Photoshop besser aussehen als mit</p><hr>
+                  <ul>
+                    <li><a class="email" href="mailto:nina.turnsek@achtb.com"><span>nina.turnsek@achtb.com</span></a></li>                    
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Nina Turnšek</h4>
+              <p>Administration und Buchhaltung</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+        </div><!-- /.row ///////////////////////////////////////////-->
+
+         <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_matej-muhic.jpg" alt="Matej Muhič" class="img-responsive">
+                <figcaption>
+                  <p>hat zu viele Gedanken für zu wenig Platz, das Whiteboard gibt bereits auf</p><hr>                  
+                  <ul>                    
+                    <li><a class="email" href="mailto:m.muhic@balzer-turnsek.com"><span >m.muhic@balzer-turnsek.com</span></a></li>                    
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Matej Muhič</h4>
+              <p>Planer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-3">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_uros-radosavljevic.jpg" alt="Uroš Radosavljevič" class="img-responsive">
+                <figcaption>
+                  <p>isst freitags Couscous ohne Tofu, denn auch Vegetarier haben ihren Stolz</p><hr>
+                  <ul>
+                    <li><a class="email" href="mailto:u.radosavljevic@balzer-turnsek.com"><span >u.radosavljevic@balzer-turnsek.com</span></a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Uroš Radosavljevič</h4>
+              <p>Planer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-3">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_matevz-zgazivoda.jpg" alt="Matevž Zgazivoda" class="img-responsive">
+                <figcaption>
+                  <p>wenn er mal groß ist, wird er entweder Hulk Hogan oder Architekt... je nach Tagesform</p><hr>
+                  <ul>
+                    <li><a class="email" href="mailto:m.k.zgazivoda@balzer-turnsek.com"><span >m.k.zgazivoda@balzer-turnsek.com</span></a></li>                    
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Matevž Zgazivoda</h4>
+              <p>Student</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3">
+            <div class="team-member">
+              <figure>
+                <img src="images/01_david-bidona.jpg" alt="David Bidona" class="img-responsive">
+                <figcaption>
+                  <p>versorgt das ganze Büro mit Grissini, man munkelt, er hat einen geheimen Vorrat</p><hr>
+                  <ul>
+                    <li><a class="email" href="mailto:email@something.com"><span >email@something.com</span></a></li>                    
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>David Bidona</h4>
+              <p>Zeihner</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-3 -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.our-team -->
+</main>
+  <!-- ***********************************************************  F O O T E R  *********************************************************** -->  
+  <!-- FOOTER -->
+ <footer class="site-footer">
+  <div class="container text-center py-4">
+    <p>&copy; 2025 Balzer &#8729; Turnšek. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+ 
+
+  <!-- ///////////////////////////////////////////////////////////// Scripts ///////////////////////////////////////////////////////////// -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>AOS.init();</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenuToggle = document.getElementById('hamburgerMenuToggle');
+    const sidebarMenu = document.getElementById('sidebarMenu');
+
+    // Toggle sidebar
+    if (hamburgerMenuToggle && sidebarMenu) {
+      hamburgerMenuToggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // prevent closing when clicking toggle
+        hamburgerMenuToggle.classList.toggle('active');
+        sidebarMenu.classList.toggle('active');
+        closeAllDropdowns();
+      });
+    }
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (e) => {
+      const isInsideSidebar = sidebarMenu.contains(e.target);
+      const isToggle = hamburgerMenuToggle.contains(e.target);
+      if (!isInsideSidebar && !isToggle) {
+        closeSidebar();
+      }
+    });
+
+    // Close sidebar on link click
+    document.querySelectorAll('#sidebarMenu a, .close-menu').forEach(link => {
+      link.addEventListener('click', () => {
+        closeSidebar();
+      });
+    });
+
+    // Dropdown toggle logic (replaces jQuery version)
+    window.toggleDropdown = function (id) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu.id !== id) menu.classList.remove('show');
+      });
+      const targetMenu = document.getElementById(id);
+      if (targetMenu) {
+        targetMenu.classList.toggle('show');
+      }
+    };
+
+    function closeAllDropdowns() {
+      document.querySelectorAll('.dropdown-menu').forEach(menu =>
+        menu.classList.remove('show')
+      );
+    }
+
+    function closeSidebar() {
+      sidebarMenu.classList.remove('active');
+      hamburgerMenuToggle.classList.remove('active');
+      closeAllDropdowns();
+    }
+
+    // Optional: dynamic content loader
+    document.querySelectorAll('[data-load]').forEach(section => {
+      fetch(section.getAttribute('data-load'))
+        .then(res => res.text())
+        .then(html => section.innerHTML = html);
+    });
+  });
+</script>
+
+<!-- ///////////////////////////////////////////////////////////// seznam na versprechen animation ///////////////////////////////////////////////////////////// -->
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.querySelectorAll('#versprechenList .reveal').forEach((item, index) => {
+              item.classList.remove('animate');
+              setTimeout(() => item.classList.add('animate'), index * 200);
+            });
+          } else {
+            document.querySelectorAll('#versprechenList .reveal').forEach(item => item.classList.remove('animate'));
+          }
+        });
+      }, { threshold: 0.2 });
+
+      const versprechenSection = document.getElementById('UNSERVERSPRECHEN');
+      if (versprechenSection) {
+        observer.observe(versprechenSection);
+      }
+    </script>
+<!-- ///////////////////////////////////////////////////////////// leistungen ikone animation ///////////////////////////////////////////////////////////// -->
+<script>
+  const observerRight = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.reveal-right').forEach((el, index) => {
+          setTimeout(() => el.classList.add('animate'), +el.dataset.delay);
+        });
+      } else {
+        document.querySelectorAll('.reveal-right').forEach(el => el.classList.remove('animate'));
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal-right').forEach(el => observerRight.observe(el));
+</script>
+
+</body>
+</html>

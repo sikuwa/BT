@@ -1,0 +1,1025 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ 
+BARVE:
+temno zelena: #5d7d37
+svetlo zelena: #bfbc7f
+#bfbd80
+temno siva #666666
+svetlo siva #cccccc
+svetlo plava: #d3dfdd
+temno rjava: #5d4e46;
+svetlo rjava:#a59d8e;
+
+umazano bela: #ededed #F5F4ED;
+lepa svetlo modra: #88A4BC
+lepa temno modra: #3B729F
+ */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Play', sans-serif;
+
+}
+
+body {
+  position: relative;
+  z-index: 0;
+}
+
+main.full-width {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+  }
+
+.menu-toggle, .overlay {
+  position: fixed;
+}
+
+.menu-toggle {
+  top: 30px;
+  right: 75px;
+  width: 70px;
+  height: 40px;
+  z-index: 1001;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* =================================================== FONTI ===================================================  */
+
+p {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+/* =================================================== H A M B U R G E R ===================================================  */
+
+.menu-toggle {
+
+   
+}
+
+.bar {
+  
+    height: 6px;
+  background-color: #5d7d37;
+  border-radius: 10%;
+  transition: 0.4s;
+  letter-spacing: 8rem;
+  
+}
+
+
+
+.menu-toggle.active .bar1 {
+  transform: rotate(-40deg) translate(-17px, 17px);
+}
+.menu-toggle.active .bar2 {
+  opacity: 0;
+}
+.menu-toggle.active .bar3 {
+  transform: rotate(40deg) translate(-7px, -7px);
+}
+
+/* =================================================== O V E R L A Y ===================================================  */
+
+
+.overlay {
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 50%;
+  background-color: #bfbd80F2;
+  z-index: 999;
+  transition: left 0.6s ease, opacity 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay.active {
+  left: 0;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    width: 100%;
+  }
+}
+
+.custom-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.custom-navbar > ul > li {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: whitesmoke;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+
+.custom-navbar li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #5d7d37;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .8s ease-in-out;
+}
+
+.custom-navbar li:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.custom-navbar li:hover {
+  color: whitesmoke;
+  font-weight: 800;
+}
+
+
+
+
+.dropdown-toggle::after {
+      
+      font-size: 0.7em;
+    }
+    .dropdown-flags img {
+      width: 20px;
+      margin: 2px;
+    }
+   
+   
+
+
+
+
+
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  background-color: #bfbd80;
+  border: 0px;
+}
+
+.dropdown-menu.show {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu li {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin: 5px 0;
+  padding: 5px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.dropdown-menu li:hover {
+  color: #5d7d37;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.bg-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none; /* ← Ensures underlying elements are interactive */
+}
+
+.bg-image::before {
+  content: "";
+  position: fixed; /* ← FIXED instead of absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/pipes02.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: zoomBackground 20s ease-in-out infinite alternate;
+  transform-origin: center;
+  z-index: -1; /* Push it behind all content */
+}
+
+@keyframes zoomBackground {
+  0% { transform: scale(1); }
+  100% { transform: scale(2); }
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: -300px;
+  transform: translate(-50%, -50%) scale(1.3);
+  animation: slideLogoDesktop 2.5s forwards ease-out;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+
+
+@keyframes slideLogoDesktop {
+  to {
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    animation: slideLogoMobile 1.5s forwards ease-out;
+  }
+  @keyframes slideLogoMobile {
+    to {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1.3);
+    }
+  }
+}
+/* =================================================== S C R O L L   D O W N   G U M B ===================================================  */
+
+
+.mouse {
+  width: 50px;
+  height: 90px;
+  border: 3px solid #5d7d37;
+  border-radius: 60px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: auto; /* Important so it is clickable */
+}
+
+
+.mouse::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5d7d37;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+/* =================================================== S E C T I O N S ===================================================  */
+.page-section {
+  height: 100vh;
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  scroll-margin-top: 0px;
+}
+
+.page-section p{
+  
+  font-size: 25px;
+
+
+}
+
+
+.page-section h1{
+  font-weight: bold;
+  padding-bottom: 5vh;;
+  
+}
+
+.leistungen-section,
+.kunden-section,
+.unserversprechen-section,
+.unseregeschichte-section,
+.team-section {
+  /*background-color: white;  or rgba(255,255,255,0.9) for transparency */
+  position: relative;
+  z-index: 1;
+}
+/* ///////////////////////////////////////////////////////////// U N T E R N E H M E N   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.unternehmen-section h1 {
+  padding-top: 0.5rem;
+  color:#5d7d37;
+
+}
+
+.unternehmen-section h2 {
+  font-weight: 400;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#666;
+  font-size: 1.8rem;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////// l e i s t u n g e n   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.leistungen-section {
+    /*min-height: 100%;
+    padding-top: 100px;
+    text-align: center;*/
+    background: #ededed;
+    height: 50%;
+    min-height: 50vh;
+}
+
+.leistungen-section p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 200;
+}
+
+ .leistungen-section .img-fluid {
+      max-width: 90%;
+    }
+
+.leistungen-section h1{
+  color: #bfbd80;  
+  font-size: 3rem;
+}
+
+.leistungen-section a {
+  color: #bfbd80;
+  font-weight: 600;
+
+}
+
+.leistungen-section a {
+  background-image: linear-gradient(
+    to right,
+    #bfbd80,
+    #5d7d37 50%,
+    #bfbd80 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.leistungen-section a:before{
+  content: '';
+  background: #5d7d37;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.leistungen-section a:hover {
+ background-position: 0;
+}
+
+.leistungen-section a:hover::before{
+  width: 100%;
+}
+
+
+.leistungen-section .img-fluid {
+  padding-top: 2vh;
+}
+
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  .reveal-right.animate {
+    animation: revealRight 0.7s ease-out forwards;
+  }
+
+  @keyframes revealRight {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+/* ///////////////////////////////////////////////////////////// L E I S T U N G E N   h t m l  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+
+.leistungen-section .table tbody tr:hover td {
+    background: #bfbc7f;
+}
+
+.leistungen-section tbody tr td{
+    border-top-color: #5d4e46;
+    border-bottom-color: #5d4e46;
+    
+  }
+
+  .leistungen-section .table>thead>tr>th {    
+  vertical-align: bottom;
+  border-bottom: 2px solid #5d4e46;   
+  }
+
+  */
+
+  .htmlleistungen-section {
+    height: auto;
+    background: #bfbd80;
+
+  }
+
+  .htmlleistungen-section h1 {
+    color: #5d7d37;
+  }
+
+  .htmlleistungen-section .table tbody tr:hover td {
+    background: #bfbd8033;
+}
+
+.htmlleistungen-section th {
+  font-family: 'Play', sans-serif;
+  font-size: 1.2rem;
+}
+
+.htmlleistungen-section td {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.htmlleistungen-section .table b {
+  font-family: 'Play', sans-serif;
+  font-size: 1.3rem;
+}
+
+.htmlleistungen-section .table thead th {
+  text-align: left;
+  background: #bfbd80F2;
+  font-weight: 400;
+  
+  font-size: 1.5rem;
+}
+
+.rotate-text {
+  writing-mode: vertical-rl;      /* vertical, right to left */
+  transform: rotate(180deg);      /* flips to vertical bottom-up */
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+/* =================================================== a c c o r d i o n  ===================================================  */
+.equal-cols th,
+.equal-cols td {
+  width: 20%;
+  font-size: 1.2rem;
+  background: transparent;
+  text-align: right;
+}
+
+.accordion-button {
+  font-size: 1.5rem;
+  background: #f4f4f4;
+  font-family: 'Play', sans-serif;
+  color: #5d7d37;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #bfbd80;
+  box-shadow: none;
+  color: whitesmoke;
+}
+
+.accordion-button:focus {
+box-shadow: none;
+}
+
+.bullet-dot {
+  display: list-item;
+  content: "\00B7";
+  /*list-style-type: "\00B7"; */
+  color: black;
+  padding-inline-start: 1ch;
+
+}
+
+.d-flex li {
+  font-weight: 200;
+ 
+  color: black;
+  font-size: 1.5rem;
+ 
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 3rem;
+  
+}
+
+.geld {
+  text-align: justify;
+  text-justify: inter-character;
+  tab-size: 18px;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+/* ///////////////////////////////////////////////////////////// K U N D E N   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.kunden-section {
+  background: whitesmoke;
+  height: auto;
+  min-height: 50%;
+}
+
+.kunden-section p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 200;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.kunden-section h1{
+  color: #bfbd80;  
+  font-size: 3rem;
+  text-align: right;
+ 
+}
+
+
+
+.kunden-section .besedilo {
+  padding-left: 2rem ;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// UNSERVERSPRECHEN   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.unserversprechen-section {
+    /*min-height: 100%;
+    padding-top: 100px;
+    text-align: center;*/
+    background: #bfbd8099;
+    height: 70%;
+    min-height: 70vh;
+
+}
+
+
+.unserversprechen-section h1{
+  color: #5d7d37;  
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reveal-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0 auto;
+  padding-left: 1.5rem; /* keep bullets visible */
+  max-width: 600px; /* optional: constrain width */
+  text-align: left; /* keep bullet list readable */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reveal-list li {
+  margin-bottom: 20px;
+  color: #5d7d37;
+  font-size: 1.25rem;
+  position: relative;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+.reveal-list li::marker {
+  font-size: 1.1rem;
+  color: #5d7d37;
+}
+
+.unserversprechen-section p {
+  text-align: center;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.reveal__content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.reveal.animate .reveal__content {
+  animation: reveal 1.7s cubic-bezier(1, 0, 0.3, 0.9) forwards;
+  opacity: 1;
+}
+
+
+
+  @keyframes reveal {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  /* ///////////////////////////////////////////////////////////// UNSEREGESCHICHTE   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+  .unseregeschichte-section {
+    /*min-height: 100%;
+    padding-top: 100px;
+    text-align: center;*/
+    background: whitesmoke;
+    height:auto;
+    min-height: 30vh;
+    padding-bottom: 0;
+}
+
+.unseregeschichte-section p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.unseregeschichte-section h1{
+  color: #bfbd80;  
+  font-size: 3rem;
+}
+
+  /* ///////////////////////////////////////////////////////////// T E A M   S E C T I O N \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*  @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';*/
+
+.team-section  {
+
+width: 100%;
+    height: 100%;
+  min-height: 100%;
+
+}
+
+.team-section h1{
+  color: #5d7d37;  
+  font-size: 3rem;
+  text-align: right;
+}
+
+.team-section p{
+  color: #bfbd80;  
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.team-section h2,
+.team-section h3,
+.team-section h4,
+.team-section h5,
+.team-section h6 {
+  margin: 0 0 20px 0;
+  text-transform: none;
+  color: #5d7d37;
+  font-family: 'Play', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.team-section hr{
+  border-top: 3px dotted white;
+}
+
+
+
+
+.team-section a:link,
+.team-section a:active,
+.team-section a:visited{
+  color:#5d7d37;
+  font-size: 18px;
+}
+
+
+.team-member figure:hover figcaption ul li span:hover {
+ font-size: 1.4rem;
+  color:whitesmoke;
+}
+
+
+.gray {
+  color: #a5a5a5;
+}
+
+.team{
+  margin:40px;
+}
+
+.team-member {
+  margin: 15px 0;
+  padding: 0;
+
+}
+
+.team-member figure {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+}
+
+.team-member figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+
+.team-member figure img {
+  min-width: 100%;
+
+}
+
+.team-member figcaption p {
+  font-size: 16px;
+  color: whitesmoke;
+  font-style: oblique;
+}
+
+.team-member figcaption ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-member figcaption ul {
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.team-member h4 {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.team-member figcaption {
+  padding: 50px;
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 996;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+  visibility: visible;
+  color: #fff;
+  background: #bfbd80E6;
+  /* Primary color, can be changed via colors.css */
+  
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+  color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+  -webkit-transform: scale(1) rotate(0) translateY(0);
+  -moz-transform: scale(1) rotate(0) translateY(0);
+  -o-transform: scale(1) rotate(0) translateY(0);
+  -ms-transform: scale(1) rotate(0) translateY(0);
+  transform: scale(1) rotate(0) translateY(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+  -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+  transform: scale(1.1) rotate(1deg) translateY(12px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* ///////////////////////////////////////////////////////////// A N G E B O T   h t m l  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.angebot-section  {
+  height: auto;
+  min-height: 100%;
+  background: #F5F4ED;
+}
+
+.angebot-section h1{
+  color: #c6c28b; 
+  font-size: 3rem;
+  
+}
+
+@media (min-width:768px) {
+  .tab-content .accordion-item {
+    border: 0;
+    border-radius: 0;
+  }
+}
+@media (max-width:767px) {
+  .tab-content > .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+.nav-item .active button  {
+  color: deeppink;
+}
+
+.angebot-section .nav-item button {
+  color: #5d7d37;
+}
+
+.angebot-section .nav-item .active button {
+  color: deeppink;
+}
+
+.angebot-section .tab a:hover,a:focus{
+    text-decoration: underline;
+    outline: none;
+}
+
+
+/*-- ***********************************************************  t a b e l a   *********************************************************** */
+                  .angebot-section .table tbody tr:hover td {
+                      background: #c6c28b
+                  }
+
+                  .angebot-section th {
+                    font-family: 'Play', sans-serif;
+                    font-size: 1.2rem;
+                  }
+
+                  .angebot-section td {
+                    text-align: left;
+                    font-size: 1.2rem;
+                    font-weight: 200;
+                    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  }*/
+
+                  .angebot-section .table b {
+                    font-family: 'Play', sans-serif;
+                    font-size: 1.3rem;
+                  }
+
+                  .angebot-section .custom-table thead th {
+                    text-align: left;
+                    background: #c6c28bF2;
+                    font-weight: 400;
+                    
+                    font-size: 1.5rem;
+                  }
+
+.nav-tabs .nav-link {
+    background-color: #ededed;
+    color: #5d7d37;
+    border: 1px solid #bfbd80;
+  }
+  .nav-tabs .nav-link.active {
+    background-color: #5d7d37;
+    color: white;
+    border-color: #5d7d37;
+  }
+  .custom-table thead {
+    background-color: #bfbd80;
+    color: white;
+    text-align: center;
+  }
+  .custom-table td, .custom-table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+ .angebot-section .custom-table tbody tr:nth-child(even) {
+    background-color: #F5F4ED;;
+  }
+  .custom-table tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+  }
+  .custom-table td:first-child {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+
+/*-- ***********************************************************  S E C T I O N   A R B E I T S M I T T E L   *********************************************************** */
+
+
+/* =================================================== F O O T E R ===================================================  */
+ /* Ensure footer is always at the bottom */
+.site-footer {
+  background-color: #bfbd80;
+  color: #5d7d37;
+
+
+  text-align: center;
+  /*margin-top: 5vh;  adds space from .team-section */
+}
+.site-footer p {
+  font-family: 'Play', sans-serif;
+}
+
+    
