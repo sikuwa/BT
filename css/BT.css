@@ -62,6 +62,14 @@ main.full-width {
 p {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
+  font-size: 1.5rem;
+}
+
+media
+@media (max-width:767px) {
+  p {
+     font-size: 1rem;
+    }
 }
 
 /* =================================================== H A M B U R G E R ===================================================  */
@@ -330,8 +338,7 @@ a {
 
 .page-section p{
   
-  font-size: 25px;
-
+  
 
 }
 
@@ -478,7 +485,7 @@ a {
 
   .htmlleistungen-section {
     height: auto;
-    background: #bfbd80;
+    background: #c6c28b;
 
   }
 
@@ -509,7 +516,7 @@ a {
 
 .htmlleistungen-section .table thead th {
   text-align: left;
-  background: #bfbd80F2;
+  background: #c6c28b;
   font-weight: 400;
   
   font-size: 1.5rem;
@@ -524,7 +531,7 @@ a {
   font-size: 1.5rem;
   padding: 5px 0;
 }
-/* =================================================== a c c o r d i o n  ===================================================  */
+
 .equal-cols th,
 .equal-cols td {
   width: 20%;
@@ -532,6 +539,8 @@ a {
   background: transparent;
   text-align: right;
 }
+
+/* =================================================== a c c o r d i o n  ===================================================  */
 
 .accordion-button {
   font-size: 1.5rem;
@@ -589,8 +598,7 @@ box-shadow: none;
 .kunden-section p {
   text-align: justify;
   text-justify: inter-word;
-  font-weight: 200;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
 }
 
 .kunden-section h1{
@@ -659,8 +667,7 @@ box-shadow: none;
 
 .unserversprechen-section p {
   text-align: center;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  
 }
 
 .reveal__content {
@@ -702,8 +709,7 @@ box-shadow: none;
 .unseregeschichte-section p{
   text-align: justify;
   text-justify: inter-word;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+
 }
 
 .unseregeschichte-section h1{
@@ -734,8 +740,7 @@ width: 100%;
 
 .team-section p{
   color: #bfbd80;  
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  
   font-size: 18px;
 }
 
@@ -926,32 +931,16 @@ width: 100%;
 
 
 
-.nav-item .active button  {
-  color: deeppink;
-}
-
-.angebot-section .nav-item button {
-  color: #5d7d37;
-}
-
-.angebot-section .nav-item .active button {
-  color: deeppink;
-}
-
-.angebot-section .tab a:hover,a:focus{
-    text-decoration: underline;
-    outline: none;
-}
-
 
 /*-- ***********************************************************  t a b e l a   *********************************************************** */
                   .angebot-section .table tbody tr:hover td {
-                      background: #c6c28b
+                      background: #c6c28b;
                   }
 
                   .angebot-section th {
                     font-family: 'Play', sans-serif;
-                    font-size: 1.2rem;
+                    
+                    
                   }
 
                   .angebot-section td {
@@ -968,30 +957,78 @@ width: 100%;
 
                   .angebot-section .custom-table thead th {
                     text-align: left;
-                    background: #c6c28bF2;
+                    background: #c6c28b;
                     font-weight: 400;
-                    
+                    border-color: #c6c28b;
                     font-size: 1.5rem;
                   }
 
+                  .angebot-section .equal-cols th,
+                  .equal-cols td {
+                    background: #c6c28b;
+                    text-align: right;
+                    margin-bottom: 0;
+                    border-color: #c6c28b;
+                  }
+
+                  .table {
+                    margin-bottom: 0;
+                  }
+
+
+
+.nav-tabs {
+  margin-bottom: 0;
+}
+
 .nav-tabs .nav-link {
-    background-color: #ededed;
-    color: #5d7d37;
-    border: 1px solid #bfbd80;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid #c6c28b;
   }
+
+  .nav-tabs .nav-link:hover {
+    color: #c6c28b;
+    border: 2px solid #c6c28b;
+  }
+
+
   .nav-tabs .nav-link.active {
-    background-color: #5d7d37;
-    color: white;
-    border-color: #5d7d37;
+    background-color: #c6c28b;
+    color: whitesmoke;
+    border-color: #c6c28b;
   }
-  .custom-table thead {
-    background-color: #bfbd80;
+.custom-table thead {
+    background-color: #c6c28b;
     color: white;
     text-align: center;
+    
+
   }
+
+ .angebot-section .custom-table table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+.angebot-section .custom-table table td {
+  border: 5px solid black;
+}
+
+ .angebot-section .custom-table th:first-child {
+  border-right: solid 1px black;
+}
+
+ .angebot-section .custom-table th:nth-child(n+2) {
+  border-right: solid 1px black;
+}
+
+ .angebot-section .custom-table th:last-child {
+  border-right: solid 0px black;
+ }
+
   .custom-table td, .custom-table th {
     vertical-align: middle;
-    text-align: center;
+    
   }
  .angebot-section .custom-table tbody tr:nth-child(even) {
     background-color: #F5F4ED;;
