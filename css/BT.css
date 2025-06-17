@@ -17,7 +17,7 @@ umazano bela: #ededed #F5F4ED;
 lepa svetlo modra: #88A4BC
 lepa temno modra: #3B729F
  */
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 html, body {
   margin: 0;
@@ -32,6 +32,10 @@ html, body {
 body {
   position: relative;
   z-index: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 main.full-width {
@@ -968,7 +972,7 @@ width: 100%;
                     background: #c6c28b;
                     text-align: right;
                     margin-bottom: 0;
-                    border-color: #c6c28b;
+                    border-width: 0;
                   }
 
                   .table {
@@ -1010,8 +1014,8 @@ width: 100%;
   border-collapse: collapse;
   border-style: hidden;
 }
-.angebot-section .custom-table table td {
-  border: 5px solid black;
+.angebot-section .custom-table table th {
+  border-top: solid 0px black;
 }
 
  .angebot-section .custom-table th:first-child {
@@ -1043,7 +1047,183 @@ width: 100%;
 
 
 /*-- ***********************************************************  S E C T I O N   A R B E I T S M I T T E L   *********************************************************** */
+.arbeitsmittel-section  {
+  height: auto;
+  min-height: 100%;
+  background: #F5F4ED;
+}
 
+/*
+.card-img-top {
+  max-height: 200px;
+  object-fit: contain;
+}
+.card h1 {
+  font-size: 1.4rem;
+  color: #5d7d37;
+}
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+*/
+
+.wrapper {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  min-height: 340px;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.4s ease-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  object-fit: contain;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+
+
+/*-- ***********************************************************  ikone   *********************************************************** */
+.png-grid.container {
+  /*max-width: 900px;*/
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.items {
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 5px;
+  cursor: pointer;
+  border: 3px dotted #5d7d37;
+  background: transparent;
+  transition: all 0.6s;
+}
+
+.icon-wrapper,
+.project-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper {
+  align-self: end;
+  padding: 0rem;
+}
+
+.icon-wrapper img {
+ 
+  transition: transform 0.6s;
+}
+
+.project-name {
+  align-self: start;
+}
+
+.project-name p {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #5d7d37;
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
+
+.items:hover {
+  border: 3px solid #5d7d37;
+}
+
+.items:hover .project-name p {
+  transform: translateY(-10px);
+}
+
+.items:hover .icon-wrapper img {
+  transform: translateY(5px);
+}
 
 /* =================================================== F O O T E R ===================================================  */
  /* Ensure footer is always at the bottom */
