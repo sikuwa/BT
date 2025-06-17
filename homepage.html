@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="favicon.ico">
-  <title>Balzer &#8729; Turnšek d.o.o.</title>
+  <title>Balzer Turnšek</title>
 
+ 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -13,17 +13,18 @@
   <link href="https://fonts.googleapis.com/css?family=Play&subset=latin,latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/BT.css" />
-
   <!-- CSSMap STYLESHEET - EUROPE -->
   <script src="js/mapdata.js"></script>
   <script src="js/europemap.js"></script>
 
-
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/BT.css" />
 </head>
+
+
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
-<main class="full-width">
+  <main class="full-width">
+
   <!-- Hamburger Icon -->
   <div class="menu-toggle" id="hamburgerMenuToggle">
     <div class="bar bar1"></div>
@@ -79,8 +80,7 @@
   </nav>
 </div>
 
-  <!-- ********************************************************************** H O M E P A G E  ********************************************************************** -->
-   <!-- Logo and Background -->
+  <!-- Logo and Background -->
 <section id="UNTERNEHMEN" class="unternehmen-section">
 
   <div class="bg-image">
@@ -93,14 +93,14 @@
     </div>
 
     <!-- Mouse Scroll Indicator -->
-    <a href="#LEISTUNGEN" class="mouse"></a>
+    <a href="#LEISTUNGEN" class="mouse scroll-trigger"></a>
   </div>
 
 </section>
 
-  <!-- Sections -->
 
-    <!-- *********************************************************** L E I S T U N G E N   S E C T I O N  *********************************************************** -->
+
+  <!-- Sections -->
  <section id="LEISTUNGEN" class="page-section leistungen-section">
   <div class="container">
     <h1>LEISTUNGEN</h1>
@@ -113,13 +113,13 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="0"><img src="images/00_H.png" class="img-fluid" alt="Heizung"></div>
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="100"><img src="images/00_K.png" class="img-fluid" alt="Kälte"></div>
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="200"><img src="images/00_L.png" class="img-fluid" alt="Lüftung"></div>
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="300"><img src="images/00_KL.png" class="img-fluid" alt="Klima"></div>
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="400"><img src="images/00_S.png" class="img-fluid" alt="Sanitär"></div>
-      <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="500"><img src="images/00_LO.png" class="img-fluid" alt="Koordination"></div>
-    </div>
+     <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="0"><img src="images/00_H.png" class="img-fluid" alt="Heizung"></div>
+        <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="100"><img src="images/00_K.png" class="img-fluid" alt="Kälte"></div>
+        <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="200"><img src="images/00_L.png" class="img-fluid" alt="Lüftung"></div>
+        <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="300"><img src="images/00_KL.png" class="img-fluid" alt="Klima"></div>
+        <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="400"><img src="images/00_S.png" class="img-fluid" alt="Sanitär"></div>
+        <div class="col-6 col-sm-4 col-md-2 reveal-right" data-delay="500"><img src="images/00_LO.png" class="img-fluid" alt="Koordination"></div>
+      </div>
   </div>
 </section>
 
@@ -139,7 +139,9 @@
   </div>
 </section>
 
-<!-- ***********************************************************  U N S E R V E R S P R E C H E N   S E C T I O N  *********************************************************** --> 
+
+
+ <!-- ***********************************************************  U N S E R V E R S P R E C H E N   S E C T I O N  *********************************************************** --> 
   <section id="UNSERVERSPRECHEN" class="page-section unserversprechen-section">
       <div class="container"><h1>UNSER VERSPRECHEN</h1>
         <p >
@@ -305,120 +307,123 @@
   <!-- FOOTER -->
  <footer class="site-footer">
   <div class="container text-center py-4">
-    <small>&copy; 2025 Balzer &#8729; Turnšek. All rights reserved.</small>
+    <small>&copy; 2025 Balzer Turnšek. All rights reserved.</small>
   </div>
 </footer>
 
+  <!-- ***********************************************************  S C R I P T S  *********************************************************** --> 
+  <!-- ✅ jQuery (load first for all dependent scripts) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- ✅ Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- ✅ AOS for animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
- 
+<!-- ✅ CSSMap plugin (Europe map) -->
+<script src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
 
-  <!-- ///////////////////////////////////////////////////////////// Scripts ///////////////////////////////////////////////////////////// -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
-  <script>AOS.init();</script>
-
+<!-- ✅ Main functionality -->
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenuToggle = document.getElementById('hamburgerMenuToggle');
-    const sidebarMenu = document.getElementById('sidebarMenu');
-
-    // Toggle sidebar
-    if (hamburgerMenuToggle && sidebarMenu) {
-      hamburgerMenuToggle.addEventListener('click', (e) => {
-        e.stopPropagation(); // prevent closing when clicking toggle
-        hamburgerMenuToggle.classList.toggle('active');
-        sidebarMenu.classList.toggle('active');
-        closeAllDropdowns();
-      });
-    }
-
-    // Close sidebar when clicking outside
-    document.addEventListener('click', (e) => {
-      const isInsideSidebar = sidebarMenu.contains(e.target);
-      const isToggle = hamburgerMenuToggle.contains(e.target);
-      if (!isInsideSidebar && !isToggle) {
-        closeSidebar();
+  $(document).ready(function () {
+    // Smooth scroll for all anchor links including mouse icon
+    $("a[href^='#']").on("click", function (e) {
+      const target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
+        $("html, body").animate({
+          scrollTop: target.offset().top
+        }, 500, function () {
+          window.location.hash = target.selector;
+        });
+        // Close overlay and dropdowns
+        $('#sidebarMenu').removeClass('active');
+        $('#hamburgerMenuToggle').removeClass('active');
+        $('.dropdown-menu').removeClass('show');
       }
     });
 
-    // Close sidebar on link click
-    document.querySelectorAll('#sidebarMenu a, .close-menu').forEach(link => {
-      link.addEventListener('click', () => {
-        closeSidebar();
-      });
+    // Toggle overlay menu
+    $('#hamburgerMenuToggle').on('click', function () {
+      $(this).toggleClass('active');
+      $('#sidebarMenu').toggleClass('active');
+      $('.dropdown-menu').removeClass('show');
     });
 
-    // Dropdown toggle logic (replaces jQuery version)
+    // Close overlay when clicking outside
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('#sidebarMenu, #hamburgerMenuToggle').length) {
+        $('#sidebarMenu').removeClass('active');
+        $('#hamburgerMenuToggle').removeClass('active');
+        $('.dropdown-menu').removeClass('show');
+      }
+    });
+
+    // Close overlay if a close-menu element is clicked
+    $('.close-menu').on('click', function () {
+      $('#sidebarMenu').removeClass('active');
+      $('#hamburgerMenuToggle').removeClass('active');
+      $('.dropdown-menu').removeClass('show');
+    });
+
+    // Dropdown toggle logic
     window.toggleDropdown = function (id) {
-      document.querySelectorAll('.dropdown-menu').forEach(menu => {
-        if (menu.id !== id) menu.classList.remove('show');
+      $('.dropdown-menu').each(function () {
+        if (this.id !== id) $(this).removeClass('show');
       });
-      const targetMenu = document.getElementById(id);
-      if (targetMenu) {
-        targetMenu.classList.toggle('show');
-      }
+      $('#' + id).toggleClass('show');
     };
 
-    function closeAllDropdowns() {
-      document.querySelectorAll('.dropdown-menu').forEach(menu =>
-        menu.classList.remove('show')
-      );
-    }
+    // Reveal animations for lists
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $('#versprechenList .reveal').each(function (index) {
+            const item = $(this);
+            item.removeClass('animate');
+            setTimeout(() => item.addClass('animate'), index * 200);
+          });
+        } else {
+          $('#versprechenList .reveal').removeClass('animate');
+        }
+      });
+    }, { threshold: 0.2 });
 
-    function closeSidebar() {
-      sidebarMenu.classList.remove('active');
-      hamburgerMenuToggle.classList.remove('active');
-      closeAllDropdowns();
-    }
+    const versprechenSection = document.getElementById('UNSERVERSPRECHEN');
+    if (versprechenSection) observer.observe(versprechenSection);
 
-    // Optional: dynamic content loader
-    document.querySelectorAll('[data-load]').forEach(section => {
-      fetch(section.getAttribute('data-load'))
-        .then(res => res.text())
-        .then(html => section.innerHTML = html);
+    // Reveal animations from right
+    const observerRight = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $('.reveal-right').each(function () {
+            const delay = $(this).data('delay') || 0;
+            const el = $(this);
+            setTimeout(() => el.addClass('animate'), delay);
+          });
+        } else {
+          $('.reveal-right').removeClass('animate');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    $('.reveal-right').each(function () {
+      observerRight.observe(this);
+    });
+
+    // Load Europe map
+    $("#map-europe").CSSMap({
+      size: 960,
+      tooltips: "floating",
+      responsive: "auto",
+      cities:true
     });
   });
 </script>
 
-<!-- ///////////////////////////////////////////////////////////// seznam na versprechen animation ///////////////////////////////////////////////////////////// -->
-    <script>
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            document.querySelectorAll('#versprechenList .reveal').forEach((item, index) => {
-              item.classList.remove('animate');
-              setTimeout(() => item.classList.add('animate'), index * 200);
-            });
-          } else {
-            document.querySelectorAll('#versprechenList .reveal').forEach(item => item.classList.remove('animate'));
-          }
-        });
-      }, { threshold: 0.2 });
 
-      const versprechenSection = document.getElementById('UNSERVERSPRECHEN');
-      if (versprechenSection) {
-        observer.observe(versprechenSection);
-      }
-    </script>
-<!-- ///////////////////////////////////////////////////////////// leistungen ikone animation ///////////////////////////////////////////////////////////// -->
-<script>
-  const observerRight = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        document.querySelectorAll('.reveal-right').forEach((el, index) => {
-          setTimeout(() => el.classList.add('animate'), +el.dataset.delay);
-        });
-      } else {
-        document.querySelectorAll('.reveal-right').forEach(el => el.classList.remove('animate'));
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.reveal-right').forEach(el => observerRight.observe(el));
-</script>
 
 </body>
 </html>
